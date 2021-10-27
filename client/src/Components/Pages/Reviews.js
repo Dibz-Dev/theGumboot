@@ -52,12 +52,12 @@ const postReview = (e) => {
 
             <div className="content-container reviews">
 
-              <h1 className='reviews-header'> Our Customers Comments!</h1>
+             
                         <div className="reviews-box">
                             {!reviews && <div> <h3 style={{ textAlign: 'center', fontFamily: 'karla'}}>{message}</h3> </div>}
                            {reviews && <ReviewList reviews={reviews} />}
                          </div>
-
+                       
         {message === 'Thank you for your Message, we hope to see you again soon!!' ? <div><h2 className='thanksMsg'>{message}</h2></div> : <div>  <h2 style={{ marginTop: '50px'}}  className="reviews-header">Leave your own Comment?
                 </h2>
                 <h6 style={{ 
@@ -123,17 +123,7 @@ const postReview = (e) => {
                  value={date}
                  onChange={(e) => setDate(e.target.value)} />
                 </div>
-                <button style={{ 
-                    width: '100px',
-                    padding: '5px 10px',
-                    fontFamily: 'love ya like a sister',
-                    borderRadius: '3px',
-                    marginTop: '10px',
-                    cursor: 'pointer',
-                    border: 'none',
-                    outline: 'none',
-                    backgroundColor: 'white'
-                }} name="submit" type="submit">Submit</button>
+                <button className="submit-btn" name="submit" type="submit">Submit</button>
                 </form>
             
                 </div>}

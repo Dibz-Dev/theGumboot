@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
 
 
 html {
@@ -339,6 +339,7 @@ ul {
   width: 100%;
   height: 70px;
   z-index: 35;
+  transition: 0.3s;
  }
 
 .sideNav.active { 
@@ -346,6 +347,7 @@ ul {
   width: 70%;
   height: 100%;
   z-index: 35;
+  transition: 0.2s;
 }
 
 .sideNav-menu {
@@ -661,11 +663,9 @@ ul {
   margin: 25px auto;
   height: 450px;
   width: 710px;
-  animation-name: fade;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
   }
+
 
   .img-slide {
 
@@ -673,7 +673,18 @@ ul {
     border-radius: 6px;
     height: 450px;
     width: 700px;
-   
+    animation: smooth;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes smooth {
+
+    0% {
+      opacity: 0;
+    } 100% {
+      opacity: 100;
+    }
   }
 
   .arrow-left {
@@ -1000,7 +1011,6 @@ ul {
   .content-paragraph-box p {
 
     font-size: 1rem;
-    font-family: 'reenie beanie', sans-serif;
     line-height: 2;
     text-align: center;
    }
@@ -1843,16 +1853,17 @@ ul {
 
 .contact-header {
 
-  font-family: 'reenie beanie', sans-serif;
+  font-family: 'love ya like a sister', sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 20px;
   z-index: 1;
+  text-decoration: underline;
 }
 
 .contact-info {
 
-  font-family: 'reenie beanie', sans-serif;
-  font-size: 1.7rem;
+  font-family: 'love ya like a sister', sans-serif;
+  font-size: 20px;
   z-index: 1;
 }
 
@@ -1873,7 +1884,7 @@ ul {
   margin-left: 30px;
   border: none;
   outline: none;
-  background-color: rgb(21, 131, 131);
+  background-color: white;
   
 }
 
@@ -1943,7 +1954,6 @@ ul {
   }
   .contact-header {
 
-    font-family: 'reenie beanie', sans-serif;
     font-weight: bold;
     font-size: 1.9rem;
    
@@ -1951,17 +1961,13 @@ ul {
 
   .contact-info {
 
-    font-family: 'reenie beanie', sans-serif;
     font-size: 1.4rem;
-   
   }
 
   .hours-info {
 
-  
     font-size: 1rem;
     margin-left: -10px;
-    font-family: 'love ya like a sister', sans-serif;
     text-align: start;
     
   }
@@ -1989,17 +1995,22 @@ ul {
   margin: auto;
 }
 
+.reviews-header {
+
+  font-family: 'love ya like a sister', sans-serif;
+  text-align: center;
+
+}
+
 .checkbox-wrapper {
 
   display: grid;
-
-  
 }
 
 .review-ind {
 
   position: relative;
-  box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
+
   padding: 2px;
   margin: 15px auto 0 auto;
   width: 80%;
@@ -2007,11 +2018,6 @@ ul {
   
 }
 
-.reviews-header {
-
-  text-align: center;
-  font-family: 'love ya like a sister', sans-serif;
-}
 
 .form-seperator {
   
@@ -2057,9 +2063,10 @@ label {
 
 .body {
 
-  font-family: 'reenie beanie', sans-serif;
+  font-family: 'love ya like a sister', sans-serif;
+  color: rgba(0, 0, 0, 0.719);
   padding: 0px 10px 10px 10px;
-  font-size: 30px;
+  font-size: 15px;
   width: 100%;
   height: 100px;
 
@@ -2076,7 +2083,7 @@ label {
 .name {
 
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 80%;
 }
 
@@ -2105,6 +2112,25 @@ label {
   font-weight: 200;
   font-family: 'love ya like a sister', sans-serif;
   color: rgb(32, 21, 131);
+}
+
+
+.submit-btn {
+
+  width: 100px;
+  padding: 5px 10px;
+  font-family: love ya like a sister;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.submit-btn:hover {
+  
+  background-color: rgb(172, 129, 201);
+  transform: scale(1.1);
 }
 
 @media (max-width: 1000px) {

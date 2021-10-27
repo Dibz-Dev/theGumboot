@@ -1,8 +1,10 @@
 import ContactData from '../../PageData/contact-data';
 
 
+
 const Contact = () => {
 
+    
     const weekdays =  'Tuesday - Saturday';
     const sundays = 'Sunday';
     return ( 

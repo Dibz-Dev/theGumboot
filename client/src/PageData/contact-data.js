@@ -3,7 +3,7 @@ const ContactData = {
 
     contactInfo: {
         header: 'Get in Touch',
-        phone: +447503846256,
+        phone: '+447503846256',
         email: 'thegumboot@net.com'
     },
 
