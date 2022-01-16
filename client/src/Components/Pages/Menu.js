@@ -21,7 +21,7 @@ const Menu = ({ onFood, onDrinks, fb, gallery, sm }) => {
                      <img className="svg-drink" onClick={onDrinks} src="./svgs/drinks-btn.svg" alt="drink menu button" />
                   </div>
                   <p className="menu-spec2">Cocktails for a FIVER<br /> every day after <br />5pm...</p>
-              
+                  
            </div>
       
      );
